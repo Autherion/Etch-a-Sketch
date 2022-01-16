@@ -10,4 +10,12 @@ function makeGrid(rows, cols) {
     };
   };
 
-  makeGrid(16,16);
+makeGrid(16,16);
+
+const grid = document.querySelectorAll(".grid-item");
+
+grid.forEach((grid) => {
+  grid.addEventListener("mouseover", () => {
+    grid.style.cssText = "background-color: blue;";
+  });
+});
